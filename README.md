@@ -4,9 +4,8 @@ Code, raw results and reproduction scripts for
 
 > A. Baheri and P. Wei, "Controller-Agnostic Runtime Safety Certificates for
 > Tool-Using AI Agents via Data-Driven Robust Reachability," *IEEE Control
-> Systems Letters*, 2026 (manuscript 26-1080). Extended version with all
-> proofs: arXiv:XXXX.XXXXX.
-
+> Systems Letters*, 2026.
+> 
 A runtime filter ("shield") sits between a language-model agent and its
 environment and permits, in each abstract state, a subset of the tool calls.
 The shield is synthesized from ordinary logs and comes with a certificate: with
