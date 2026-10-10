@@ -16,9 +16,6 @@ bound over a distribution-free L1 confidence set around the empirical
 transition kernel (Sections II–III of the letter), and the synthesis is a greedy
 search for the least restrictive filter meeting the budget (Algorithm 1).
 
-Everything in the letter's Section V is reproduced here: Experiment 1 and the
-convergence sentence, Table II, Table III, Table IV (from the raw output of the
-language-model sweep) and Experiment 4, plus Figure 1.
 
 ## Layout
 
