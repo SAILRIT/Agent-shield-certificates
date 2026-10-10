@@ -1,0 +1,21 @@
+logged transitions with a predecessor: 450153 (40000 rollouts of 16 steps, seed 7)
+
+--- context = previous state ---
+   n_rows       160
+   rejected     0
+   rej_rate     0.0000
+   eta_hat      0.1364
+   eta_null95   0.1694
+   eta_excess   0.0000
+   median_gap   0.0679
+
+--- context = previous state and action ---
+   n_rows       0
+   rejected     0
+   rej_rate     0.0000
+   eta_hat      0.0000
+   eta_null95   0.8422
+   eta_excess   0.0000
+   median_gap   0.0000
+
+results written to /tmp/claude-0/-home-claude/17ae1aec-d8eb-545f-9cdd-e2b3c631835e/scratchpad/repo_fresh/agent-shield-certificates/experiments/../results/exp4_markov_grid.json

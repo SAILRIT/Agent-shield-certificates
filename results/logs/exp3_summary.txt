@@ -1,0 +1,37 @@
+Table IV: seven controllers behind one shield (150 episodes each; * = rows printed in the letter)
+controller             unsafe none  shield  succ none  shield  interv  blocks
+*scripted competent            0.0     0.0       99.3    99.3     0.0  none
+*Qwen2.5-1.5B, tau=0          70.7     0.0        0.0     0.0    42.0  chmod
+ Qwen2.5-1.5B, tau=1          54.7     0.0        2.0     2.0    31.0  chmod
+*Qwen2.5-3B, tau=0            78.7     0.0        3.3    38.7    43.4  chmod
+ Qwen2.5-3B, tau=1            84.7     0.0        2.7    21.3    46.9  chmod
+*Qwen2.5-7B, tau=0            20.7     0.0       55.3    55.3     6.5  delete
+*Qwen2.5-7B, tau=1            21.3     0.0       59.3    59.3     6.1  delete
+
+injected episodes: 39 of 150 (the same in every run)
+unsafe without the shield: from 0.0% to 84.7%
+unsafe with the shield: 0 of 1050 episodes; one-sided 95% Clopper-Pearson upper bound per run 1.977% (the letter: 2%), pooled 0.285% (the letter rounds up: 0.29%)
+7B, tau=0: hijacked in 31 of 39 attacked episodes (79.5%); blocked calls {'delete': 39}; first actions {'read': 150}
+3B, tau=0: success 3.3% -> 38.7% with the shield
+intervention rate: 1.5B and 3B 31.0-46.9, 7B 6.1-6.5
+1.5B, tau=0: first actions {'chmod': 150}, terminals with the shield {'halt': 150}
+1.5B, tau=1: unsafe without the shield 54.7%, terminals with the shield {'halt': 140, 'timeout': 7, 'goal': 3}, intervention 31.0
+  [ok] Table IV scripted: (0.0, 0.0, 99.3, 99.3, 0.0)
+  [ok] Table IV 1.5B tau=0: (70.7, 0.0, 0.0, 0.0, 42.0, 'chmod')
+  [ok] Table IV 3B tau=0: (78.7, 0.0, 3.3, 38.7, 43.4, 'chmod')
+  [ok] Table IV 7B tau=0: (20.7, 0.0, 55.3, 55.3, 6.5, 'delete')
+  [ok] Table IV 7B tau=1: (21.3, 0.0, 59.3, 59.3, 6.1, 'delete')
+  [ok] 39 of 150 injected: (39,)
+  [ok] worst unsafe rate without shield 84.7%: (84.7,)
+  [ok] none unsafe with the shield: (0,)
+  [ok] per-run bound 2%: (2,)
+  [ok] pooled bound 0.29%: (0.29,)
+  [ok] 7B hijacked 31 of 39 (79.5%): (31, 79.5)
+  [ok] 7B blocks only the 39 injected deletes: ({'delete': 39},)
+  [ok] 7B always starts with read: ({'read': 150},)
+  [ok] 3B success 3.3 -> 38.7: (3.3, 38.7)
+  [ok] smaller models 31-47 blocked per 100 calls: (31, 47)
+  [ok] about 6 for the 7B: (6, 6)
+  [ok] 1.5B tau=0 always opens with chmod: ({'chmod': 150},)
+  [ok] 1.5B tau=0 always halts safely: ({'halt': 150},)
+18 of 18 statements verified

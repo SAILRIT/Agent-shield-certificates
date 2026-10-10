@@ -1,0 +1,150 @@
+{
+ "params": {
+  "eps": 0.05,
+  "T": 10,
+  "M": 4000,
+  "delta": 0.05,
+  "n_seed": 200,
+  "n_mc": 20000,
+  "n_react": 5000,
+  "n_min": 10,
+  "p_inj": 0.3,
+  "q_detour": 0.15
+ },
+ "least_visited_covered_row": {
+  "min": 9037,
+  "max": 9335,
+  "seed0": 9118
+ },
+ "table": {
+  "no shield": {
+   "cert": null,
+   "adv": 0.9999999539747594,
+   "succ": 0.99455,
+   "intv": 0.0,
+   "length": 4.2532,
+   "forb": 0.0,
+   "viol_rate": null
+  },
+  "all-HALT": {
+   "cert": 0.0,
+   "adv": 0.0,
+   "succ": 0.0,
+   "intv": 1.0,
+   "length": 1.0,
+   "forb": 0.8333333333333335,
+   "viol_rate": 0.0
+  },
+  "count-thr.": {
+   "cert": null,
+   "adv": 0.0,
+   "succ": 0.99455,
+   "intv": 0.0,
+   "length": 4.2532,
+   "forb": 0.8020833333333335,
+   "viol_rate": null
+  },
+  "Dirichlet-95%": {
+   "cert": 0.0,
+   "adv": 0.0,
+   "succ": 0.99455,
+   "intv": 0.0,
+   "length": 4.2532,
+   "forb": 0.08333333333333337,
+   "viol_rate": 0.0
+  },
+  "plug-in MDP": {
+   "cert": 0.0,
+   "adv": 0.9999999539747594,
+   "succ": 0.99455,
+   "intv": 0.0,
+   "length": 4.2532,
+   "forb": 0.0,
+   "viol_rate": 1.0
+  },
+  "policy-spec.": {
+   "cert": 0.0,
+   "adv": 0.9999999539747594,
+   "succ": 0.99455,
+   "intv": 0.0,
+   "length": 4.2532,
+   "forb": 0.0,
+   "viol_rate": 1.0
+  },
+  "robust (ours)": {
+   "cert": 0.0,
+   "adv": 0.0,
+   "succ": 0.99455,
+   "intv": 0.0,
+   "length": 4.2532,
+   "forb": 0.04166666666666662,
+   "viol_rate": 0.0
+  }
+ },
+ "react": {
+  "no shield": {
+   "unsafe": 0.2986,
+   "succ": 0.688,
+   "halted": 0.0,
+   "intv": 0.0,
+   "blocked_per_ep": 0.0,
+   "length": 4.4472
+  },
+  "count-thr.": {
+   "unsafe": 0.0,
+   "succ": 0.6902,
+   "halted": 0.3054,
+   "intv": 0.28401548672566373,
+   "blocked_per_ep": 1.027,
+   "length": 3.616
+  },
+  "Dirichlet-95%": {
+   "unsafe": 0.0,
+   "succ": 0.9616,
+   "halted": 0.0,
+   "intv": 0.1117404918551877,
+   "blocked_per_ep": 0.6352,
+   "length": 5.6846
+  },
+  "plug-in MDP": {
+   "unsafe": 0.2986,
+   "succ": 0.688,
+   "halted": 0.0,
+   "intv": 0.0,
+   "blocked_per_ep": 0.0,
+   "length": 4.4472
+  },
+  "robust (ours)": {
+   "unsafe": 0.0,
+   "succ": 0.9752,
+   "halted": 0.0,
+   "intv": 0.10735499010046198,
+   "blocked_per_ep": 0.5856,
+   "length": 5.4548
+  }
+ },
+ "robust_fences": [
+  [
+   0,
+   1
+  ],
+  [
+   0,
+   3
+  ],
+  [
+   2,
+   3
+  ],
+  [
+   14,
+   3
+  ]
+ ],
+ "robust_fences_described": [
+  "chmod in state (prod=0, write=0, confirmed=0, destructive=0)",
+  "delete in state (prod=0, write=0, confirmed=0, destructive=0)",
+  "delete in state (prod=0, write=0, confirmed=1, destructive=0)",
+  "delete in state (prod=1, write=1, confirmed=1, destructive=0)"
+ ]
+}

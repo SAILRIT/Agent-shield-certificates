@@ -1,0 +1,39 @@
+logged transitions with a predecessor: 291778
+
+--- paper's 4 predicates | context = previous state ---
+   n_rows       15
+   rejected     0
+   rej_rate     0.0000
+   eta_hat      0.0842
+   eta_null95   0.2006
+   eta_excess   0.0000
+   median_gap   0.0206
+
+--- paper's 4 predicates | context = previous state and action ---
+   n_rows       16
+   rejected     0
+   rej_rate     0.0000
+   eta_hat      0.1696
+   eta_null95   0.5060
+   eta_excess   0.0000
+   median_gap   0.0704
+
+--- confirmation predicate dropped | context = previous state ---
+   n_rows       7
+   rejected     4
+   rej_rate     0.5714
+   eta_hat      0.1842
+   eta_null95   0.1550
+   eta_excess   0.0292
+   median_gap   0.0217
+
+--- confirmation predicate dropped | context = previous state and action ---
+   n_rows       7
+   rejected     2
+   rej_rate     0.2857
+   eta_hat      0.6300
+   eta_null95   0.3743
+   eta_excess   0.2557
+   median_gap   0.0869
+
+results written to /tmp/claude-0/-home-claude/17ae1aec-d8eb-545f-9cdd-e2b3c631835e/scratchpad/repo_fresh/agent-shield-certificates/experiments/../results/exp4_markov_sandbox.json

@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the letter below."
+title: "Controller-Agnostic Runtime Safety Certificates for Tool-Using AI Agents via Data-Driven Robust Reachability (code)"
+authors:
+  - family-names: Baheri
+    given-names: Ali
+  - family-names: Wei
+    given-names: Peng
+license: MIT
+preferred-citation:
+  type: article
+  title: "Controller-Agnostic Runtime Safety Certificates for Tool-Using AI Agents via Data-Driven Robust Reachability"
+  authors:
+    - family-names: Baheri
+      given-names: Ali
+    - family-names: Wei
+      given-names: Peng
+  journal: "IEEE Control Systems Letters"
+  year: 2026
+  notes: "Extended version with all proofs: arXiv:XXXX.XXXXX"

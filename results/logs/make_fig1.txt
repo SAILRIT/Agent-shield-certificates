@@ -1,0 +1,1 @@
+figure written to results/fig1.pdf: shield certifies Vbar_T(s0)=0.072, forbids 101 of 200 live pairs, colour scale to 0.3

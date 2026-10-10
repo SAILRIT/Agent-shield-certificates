@@ -1,0 +1,21 @@
+worst-case unsafe-reach probability from s0 without a shield: 0.9999
+
+shield from M=12,000 episodes (eps=0.1): certified Vbar_T(s0)=0.072, exact worst case V*_T(s0)=0.009
+
+three controllers through the same shield (40000 episodes each):
+  adversarial  unsafe-reach 0.010  (within the certificate)
+  competent    unsafe-reach 0.000  (within the certificate)
+  random       unsafe-reach 0.000  (within the certificate)
+
+certificate of the fixed shield recomputed from fresh logs (5 datasets per M):
+  M=  3,000: Vbar mean=0.189  [0.181, 0.195]
+  M=  6,000: Vbar mean=0.120  [0.114, 0.134]
+  M= 12,000: Vbar mean=0.080  [0.076, 0.084]
+  M= 24,000: Vbar mean=0.050  [0.047, 0.053]
+  M= 48,000: Vbar mean=0.034  [0.032, 0.036]
+  M=120,000: Vbar mean=0.023  [0.022, 0.024]
+  log-log slope of (Vbar - V*) against M: -0.70  (Corollary 1: -0.5)
+
+live pairs forbidden: 50.5% with the committed-prefix estimator (n0=672 of 725-1185 observations per row), 25.5% if every observation could be used
+
+results written to results/exp1_grid_soundness.json

@@ -1,0 +1,456 @@
+{
+ "no_shield_worst_case": 0.9999381804206036,
+ "shield": {
+  "Vbar": 0.07160424012140391,
+  "Vstar": 0.00943695661529884,
+  "forbidden": 101,
+  "n_rows": 200,
+  "n0": 672,
+  "D": [
+   [
+    true,
+    true,
+    false,
+    true,
+    true
+   ],
+   [
+    false,
+    true,
+    false,
+    false,
+    true
+   ],
+   [
+    false,
+    true,
+    false,
+    false,
+    true
+   ],
+   [
+    false,
+    true,
+    false,
+    false,
+    true
+   ],
+   [
+    false,
+    true,
+    false,
+    false,
+    true
+   ],
+   [
+    false,
+    true,
+    true,
+    false,
+    true
+   ],
+   [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   [
+    false,
+    false,
+    false,
+    false,
+    true
+   ],
+   [
+    true,
+    true,
+    false,
+    false,
+    true
+   ],
+   [
+    false,
+    false,
+    false,
+    false,
+    true
+   ],
+   [
+    false,
+    false,
+    false,
+    false,
+    true
+   ],
+   [
+    false,
+    false,
+    false,
+    false,
+    true
+   ],
+   [
+    false,
+    false,
+    false,
+    false,
+    true
+   ],
+   [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   [
+    true,
+    false,
+    false,
+    false,
+    true
+   ],
+   [
+    true,
+    false,
+    false,
+    false,
+    true
+   ],
+   [
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   [
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   [
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   [
+    false,
+    false,
+    false,
+    false,
+    true
+   ],
+   [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   [
+    true,
+    false,
+    false,
+    false,
+    true
+   ],
+   [
+    true,
+    false,
+    false,
+    false,
+    true
+   ],
+   [
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   [
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   [
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   [
+    false,
+    false,
+    false,
+    false,
+    true
+   ],
+   [
+    true,
+    false,
+    false,
+    false,
+    true
+   ],
+   [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   [
+    false,
+    false,
+    false,
+    false,
+    true
+   ],
+   [
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   [
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   [
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   [
+    false,
+    false,
+    false,
+    false,
+    true
+   ],
+   [
+    true,
+    false,
+    false,
+    false,
+    true
+   ],
+   [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   [
+    true,
+    false,
+    true,
+    true,
+    true
+   ],
+   [
+    false,
+    false,
+    false,
+    false,
+    true
+   ],
+   [
+    false,
+    true,
+    false,
+    false,
+    true
+   ],
+   [
+    false,
+    true,
+    false,
+    false,
+    true
+   ],
+   [
+    false,
+    false,
+    false,
+    false,
+    true
+   ],
+   [
+    true,
+    false,
+    false,
+    false,
+    true
+   ],
+   [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   [
+    false,
+    true,
+    true,
+    true,
+    true
+   ],
+   [
+    false,
+    true,
+    false,
+    false,
+    true
+   ],
+   [
+    false,
+    false,
+    false,
+    false,
+    true
+   ],
+   [
+    false,
+    true,
+    false,
+    false,
+    true
+   ],
+   [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   [
+    false,
+    false,
+    false,
+    false,
+    false
+   ]
+  ],
+  "V": [
+   0.006427131336585866,
+   0.006439927716400763,
+   0.001192561470802818,
+   0.00022153119645706054,
+   4.570730165202301e-05,
+   1.6834956984827295e-05,
+   1.5047128940965944e-05,
+   0.0,
+   0.03211038781036597,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.2353528463097393e-05,
+   0.029332362136106786,
+   0.1744016672201754,
+   1.0,
+   1.0,
+   1.0,
+   0.0,
+   1.071123063935136e-05,
+   0.07170909942472442,
+   0.2881091651751324,
+   1.0,
+   1.0,
+   1.0,
+   0.0,
+   8.189545109801996e-06,
+   0.0716914293404395,
+   0.0,
+   1.0,
+   1.0,
+   1.0,
+   0.0,
+   6.598305671306891e-06,
+   0.07164982708418151,
+   0.0716051205156055,
+   0.0,
+   0.2849796519636792,
+   0.15818284634608615,
+   0.0,
+   4.302025559753219e-06,
+   0.07160424012140391,
+   0.0715094941596687,
+   0.07074497837692316,
+   0.04874677853872643,
+   0.0,
+   1.402963591476364e-06,
+   3.0466031002890923e-06,
+   0.0
+  ]
+ },
+ "controllers": {
+  "adversarial": 0.009725,
+  "competent": 0.00035,
+  "random": 0.0001
+ },
+ "convergence": {
+  "3000": {
+   "mean": 0.18878545326697546,
+   "min": 0.18099151769397323,
+   "max": 0.19508745088477264
+  },
+  "6000": {
+   "mean": 0.12032336722965961,
+   "min": 0.11442635100252418,
+   "max": 0.13365353968496857
+  },
+  "12000": {
+   "mean": 0.07978703723719335,
+   "min": 0.07613013551723341,
+   "max": 0.08415220200052279
+  },
+  "24000": {
+   "mean": 0.049795727073588855,
+   "min": 0.04734680887059762,
+   "max": 0.05313951963781622
+  },
+  "48000": {
+   "mean": 0.03441868637411614,
+   "min": 0.0324694603100122,
+   "max": 0.03598805819140579
+  },
+  "120000": {
+   "mean": 0.023381291090492185,
+   "min": 0.022329363697971154,
+   "max": 0.024144287069284787
+  }
+ },
+ "slope": -0.7006389623162873,
+ "forbidden_share": {
+  "committed_prefix": 50.5,
+  "all_samples": 25.5
+ }
+}

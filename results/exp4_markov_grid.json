@@ -1,0 +1,20 @@
+{
+ "s": {
+  "n_rows": 160,
+  "rejected": 0,
+  "rej_rate": 0.0,
+  "eta_hat": 0.13636151034671687,
+  "eta_null95": 0.16936018051587615,
+  "eta_excess": 0.0,
+  "median_gap": 0.06794284520649438
+ },
+ "sa": {
+  "n_rows": 0,
+  "rejected": 0,
+  "rej_rate": 0.0,
+  "eta_hat": 0.0,
+  "eta_null95": 0.8422152560083596,
+  "eta_excess": 0.0,
+  "median_gap": 0.0
+ }
+}
