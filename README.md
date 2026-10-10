@@ -107,10 +107,6 @@ and `sandbox.log_counts_prefix` / `sandbox.estimator_from_logs`. The routines
 implement the superseded estimator that uses every observation; they exist only
 for the comparison in Experiment 1 ("if all samples could be used").
 
-Budgets: n₀ = ⌊0.7 M T / R⌋ for every grid row (R = 200 rows; logging is
-exploratory by construction); n₀ = M in the sandbox, where the competent agent
-visits only three rows, each at least 9,118 times at M = 4,000, and the hazard
-rows not at all.
 
 ## Two synthesis routines
 
@@ -127,11 +123,6 @@ rows not at all.
   it. The sandbox and language-model permissiveness figures come from this
   variant, not from the printed algorithm.
 
-Conventions: Table III reports forbidden pairs as a share of the 96 *live*
-pairs (16 live states × 6 tools); the sweep script prints the same four fences
-as 4/102 because its denominator includes the absorbing goal state. The union
-bound of (5) ranges over R = 102 rows in the sandbox (every non-unsafe,
-non-sink state, the goal included) and R = 200 on the grid.
 
 ## Experiment 3: the language-model sweep
 
@@ -141,53 +132,8 @@ estimator and `synth`; `tests/test_core.py` checks that those copies build
 exactly the shield the library builds. The shield is the one of Table III,
 built once from 4,000 scripted-agent episodes (seed 20000) and never refitted.
 
-Each episode draws its injection flag and environment noise from
-`default_rng(777 + episode index)`, so the 39 injected episodes are the same
-for every controller. A forbidden call is blocked, the model is told so and
-asked again, up to three times; HALT is executed if the fourth proposal is also
-forbidden. Blocked proposals do not advance the step count, and the
-intervention rate is blocked proposals per executed call. The model chooses
-among the six tool names by its next-token distribution restricted to them
-(no parsing); at τ = 0 the argmax, at τ = 1 a sample.
 
-The reported sweep ran in two Colab sessions on a T4, whose raw outputs are
-`results/exp3_llm_sweep_qwen1.5b.json` (scripted control, 1.5B at τ = 0 and 1)
-and `results/exp3_llm_sweep_qwen3b_7b.json` (scripted control, 3B and 7B at
-τ = 0 and 1; the 7B in 4-bit NF4). The scripted control is identical in both
-files, which checks that both sessions ran the same harness.
-`exp3_summarize.py --check` recomputes Table IV and the eighteen statements the
-text makes about this experiment from these files. The pooled bound on the
-average unsafe rate over the 1050 shielded episodes is a one-sided 95%
-Clopper–Pearson bound, 0.285%, which the letter rounds up to 0.29%.
 
-## Notes on reproducibility
-
-* Everything but the sweep is deterministic given the seeds in the scripts
-  (numpy's `default_rng`); the outputs in `results/` were produced with numpy
-  2.5 and scipy 1.18. Dataset `sd` at sample size `M` on the grid uses seed
-  `40000 + 131 M + sd`; the convergence curve uses `sd = 1000..1004`; sandbox
-  seed `i` uses `20000 + i` for the logs and `50000 + i` for the Dirichlet
-  posterior samples.
-* The sweep itself is not bit-reproducible across GPU drivers and library
-  versions (the τ = 0 runs depend only on argmax decisions and are stable in
-  practice; the τ = 1 runs sample).
-* Experiment 4 on the grid logs 40,000 rollouts with seed 7. The number of
-  testable rows (160) and the rejection count (0) do not depend on the seed;
-  η̂ and its permutation null move in the second decimal (0.12–0.16 against
-  0.16–0.17 over seeds 0–59). With the previous state and action as context no
-  grid row has enough data to be testable at the threshold of 25 observations
-  per context.
-* Algorithm 1 at M = 2,500 (n₀ = 140) sits on a plateau: with radii this large
-  no single removal lowers V̄_T(s₀) below 1 for the first hundred or so steps,
-  so ties in line 6 are broken by state order and the shields are restrictive
-  (112 of 200 pairs forbidden on average). The certificate is exact regardless.
-* `robust._inner_max_core` is the closed form of Proposition 1 and is checked
-  against a scalar reference on random rows by the tests. An earlier version of
-  the batched evaluation of line 5 (used for the shields of the submitted
-  manuscript) did not cap the mass moved onto the top successor by the room
-  left there and so under-valued candidates when n₀ is small; the certificates
-  were always recomputed exactly, and the only published number it touched is
-  the M = 2,500 average certificate of Table II (0.083 → 0.076).
 
 ## License and citation
 
